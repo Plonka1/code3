@@ -1,2 +1,3 @@
-customer = { "name" => "Ivan", "starsign" => "Tarus", "age" => 21 }
-puts customer["name"], ["age"], ["starsign"]
+File.open("ex4.rb").each do |line|
+  puts line
+end

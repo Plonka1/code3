@@ -1,13 +1,8 @@
-puts "You enter a room with two doors.
-Do you open door 1 or door 2"
+puts "hey what file do you want to read"
+filename  = gets.chomp
 
-print "> "
-door = gets.chomp
+txt = file.open(filename)
 
-if door == "1"
-  puts "You won $5000!"
-elsif door == "2"
-  puts "You stare into the endless abyss :("
-else
-  puts "You failed"
-end
+puts "you opened #{[filename]}"
+puts "=" * 15
+print txt.read

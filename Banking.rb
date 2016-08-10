@@ -17,15 +17,36 @@ class BankAccount
 
   attr_accessor :balance
 end
+#
+ivan = BankingCustomer.new("ivan","ivan.com", BankAccount.new(300), "123 fake st", 1288834)
+file = 'ex3.txt'
+txt = open(file,'r+')
+# File.truncate(txt,0)
+txt.write(ivan.account.balance)
+puts txt.read
+puts "how much money in your account? #{ivan.account.balance}"
+# puts line
 
-puts "whats your name"
-name = gets.chomp
-puts "whats your email address"
-email = gets.chomp
+# File.open('ex3.txt', 'r')
 
-ivan = BankingCustomer.new(name, email, BankAccount.new(1000000), "123 fake st", 1288834)
 
-puts ivan.account.balance
+
+
+
+
+
+
+# puts "whats your name"
+# name = gets.chomp
+# puts "whats your email address"
+# email = gets.chomp
+
+
+
+
+
+
+
 
 
 
