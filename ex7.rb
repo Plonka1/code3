@@ -1,8 +1,19 @@
-puts "hey what file do you want to read"
-filename  = gets.chomp
+exit = false
 
-txt = file.open(filename)
+def menu
+  puts "1 for exit"
+  puts "2 for poem"
 
-puts "you opened #{[filename]}"
-puts "=" * 15
-print txt.read
+end
+
+until exit do
+
+  menu
+  command = gets.chomp
+  if command == '1'
+  elsif command == '2'
+    puts "hello"
+  else
+    puts "wrong command"
+end
+end

@@ -7,6 +7,7 @@ class Car
 
 
   attr_accessor :make, :model, :year
+end
 
 
   class Driver
@@ -18,7 +19,8 @@ class Car
 
 
       attr_accessor :car, :name, :age
+    end
 
+ferrari = Driver.new(Car.new("SUV","X15",2010),"Ivan",19)
 
-      ferrari = Car.new("Ferrari", "X15", 2010, Driver.new "Holden", "Ivan", 21)
-end
+puts "what is your cars make model and year? #{ferrari.car.year}"
