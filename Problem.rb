@@ -2,6 +2,7 @@ require 'colorize'
 require 'catpix'
 
 
+
 Catpix::print_image "dress_code.jpg"
 
 
@@ -79,11 +80,4 @@ end
 
 
 
-#   puts "What type of lunch is it? Business lunch or a Social lunch?"
 #
-# lunch = gets.chomp
-# puts = "#{lunch}"
-# if business == "Business attire"
-# elsif business == "social"
-#    puts "You need to dress in Smart Casual"
-# end
